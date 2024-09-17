@@ -1,0 +1,36 @@
+// C variables and Data types
+// Preprocessor directive
+#include <stdio.h> // scanf(), printf()
+
+int main()
+{
+    // Declaration and initialization
+    char a;               // %c for single character
+    char name[100];       // %s for string (sufficient size for input)
+    int age;              // %d for integer
+    float area;           // %f for float
+    double salary;        // %lf for double
+
+    // Input
+    printf("Enter character: ");
+    scanf(" %c", &a);    
+    printf("The character is %c\n", a);
+
+    printf("Enter your name: ");
+    scanf("%99s", name);
+    printf("The string is %s\n", name);
+
+    printf("Enter your age: ");
+    scanf("%d", &age);  
+    printf("The integer is %d\n", age);
+
+    printf("Enter the area: ");
+    scanf("%f", &area); 
+    printf("The float is %.2f\n", area); 
+    
+    printf("Enter your salary: ");
+    scanf("%lf", &salary);
+    printf("The double is %.2lf\n", salary);
+    
+    return 0;
+}
